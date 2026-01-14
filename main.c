@@ -32,7 +32,7 @@ int main() {
         }
 
         sleep(1);
-        temperature_moteur  += 0.05 * vitesse;
+        temperature_moteur  = temperature_moteur +( 0.5 * vitesse) -(0.1*(temperature_moteur - 20));
 
         printf("Vitesse : %.2f | Temp : %.2f\n", vitesse, temperature_moteur );
         enregistrer_cycle(b, vitesse, temperature_moteur );
