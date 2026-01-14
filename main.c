@@ -38,6 +38,7 @@ int main() {
         enregistrer_cycle(b, vitesse, temperature_moteur );
 
         if (temperature_moteur  > 110) {
+            printf("\nil y a crash\n");
             dump_memory(b);
             break;
         }
