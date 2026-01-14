@@ -25,7 +25,7 @@ int main() {
         scanf(" %c", &c);
 
         if (c == 'A') vitesse+= 5;
-        else if (c == 'F') vitesse= (vitesse>= 5) ? vitesse- 7 : 0;
+        else if (c == 'F') vitesse= (vitesse>= 7) ? vitesse- 7 : 0;
         else if (c == 'Q') {
             dump_memory(b);
             break;
