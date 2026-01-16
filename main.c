@@ -42,6 +42,11 @@ int main() {
             dump_memory(b);
             break;
         }
+        if(vitesse==0){
+        printf("\nil y a crash\n");
+        dump_memory(b);
+        break;
+      }
     }
 
     analyser();
